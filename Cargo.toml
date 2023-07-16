@@ -1,0 +1,12 @@
+[package]
+name = "oledprint"
+version = "1.0.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+ssd1306 = "0.7.1"
+embedded-graphics = "0.7.1"
+linux-embedded-hal = "0.3.2"
+text = "0.0.4"
