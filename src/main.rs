@@ -5,7 +5,7 @@ use ssd1306::{prelude::*, I2CDisplayInterface, Ssd1306};
 use embedded_graphics::{
     mono_font::{
         MonoTextStyleBuilder,
-        ascii::FONT_6X10
+        ascii::FONT_8X13_BOLD,
     },
     text::{
         Text,
@@ -34,7 +34,7 @@ fn main() {
     display.init().unwrap();
     
     let text_style = MonoTextStyleBuilder::new()
-        .font(&FONT_6X10)
+        .font(&FONT_8X13_BOLD)
         .text_color(BinaryColor::On)
         .build();
     
