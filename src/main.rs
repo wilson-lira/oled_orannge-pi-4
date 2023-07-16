@@ -18,15 +18,10 @@ use embedded_graphics::{
 };
 
 fn main() {
-
-    
-
     let args: Vec<String> = env::args().collect();
     
     let line1 = &args[1];
     let line2 = &args[2];
-
-
 
     let i2c = I2cdev::new("/dev/i2c-8").unwrap();
     let interface = I2CDisplayInterface::new(i2c);
